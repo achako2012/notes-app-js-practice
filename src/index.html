@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Notes</title>
+</head>
+
+<body>
+
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">name</th>
+        <th scope="col">created</th>
+        <th scope="col">category</th>
+        <th scope="col">content</th>
+        <th scope="col">dates</th>
+        <th scope="col">icons</th>
+    </tr>
+    </thead>
+    <tbody id="activeNotesTable">
+    </tbody>
+</table>
+
+<div class="d-flex justify-content-between">
+    <button id="addNoteBtn" type="button" class="btn btn-primary">Add note</button>
+    <button id="viewArchivedBtn" type="button" class="btn btn-primary">Archived notes</button>
+</div>
+
+<div class="collapsed-wrapper">
+    <div class="row">
+        <div class="col">
+            <div class="collapse show multi-collapse" id="collapse">
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">name</th>
+                        <th scope="col">created</th>
+                        <th scope="col">category</th>
+                        <th scope="col">content</th>
+                        <th scope="col">dates</th>
+                        <th scope="col">icons</th>
+                    </tr>
+                    </thead>
+                    <tbody id="archivedNotesTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
