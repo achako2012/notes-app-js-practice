@@ -1,4 +1,4 @@
-import {ADD_NOTE, DELETE_NOTE, EDIT_NOTE} from './types'
+import {ADD_NOTE, ARCHIVE_NOTE, DELETE_NOTE, EDIT_NOTE} from './types'
 
 export const addNote = (note) => ({
     type: ADD_NOTE,
@@ -14,3 +14,4 @@ export const deleteNote = (id) => ({
     type: DELETE_NOTE,
     payload: id
 });
+

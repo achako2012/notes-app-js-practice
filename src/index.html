@@ -12,46 +12,43 @@
 
 <body>
 
-<table class="table">
-    <thead class="thead-dark">
-    <tr>
-        <th scope="col">name</th>
-        <th scope="col">created</th>
-        <th scope="col">category</th>
-        <th scope="col">content</th>
-        <th scope="col">dates</th>
-        <th scope="col">icons</th>
-    </tr>
-    </thead>
-    <tbody id="activeNotesTable">
-    </tbody>
-</table>
+<div class="notes-container">
 
-<div class="d-flex justify-content-between">
-    <button id="addNoteBtn" type="button" class="btn btn-primary">Add note</button>
-    <button id="viewArchivedBtn" type="button" class="btn btn-primary">Archived notes</button>
-</div>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">name</th>
+            <th scope="col">created</th>
+            <th scope="col">category</th>
+            <th scope="col">content</th>
+            <th scope="col" >dates</th>
+            <th scope="col" >icons</th>
+        </tr>
+        </thead>
+        <tbody id="activeNotesTable">
+        </tbody>
+    </table>
 
-<div class="collapsed-wrapper">
-    <div class="row">
-        <div class="col">
-            <div class="collapse show multi-collapse" id="collapse">
-                <table class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">name</th>
-                        <th scope="col">created</th>
-                        <th scope="col">category</th>
-                        <th scope="col">content</th>
-                        <th scope="col">dates</th>
-                        <th scope="col">icons</th>
-                    </tr>
-                    </thead>
-                    <tbody id="archivedNotesTable">
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div class="control-buttons d-flex justify-content-between">
+        <button id="viewArchivedBtn" type="button" class="btn btn-primary">Archived notes</button>
+        <button id="addNoteBtn" type="button" class="btn btn-primary">Add note</button>
+    </div>
+
+    <div class="collapse show multi-collapse" id="collapse">
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">name</th>
+                <th scope="col">created</th>
+                <th scope="col">category</th>
+                <th scope="col">content</th>
+                <th scope="col">dates</th>
+                <th scope="col">icons</th>
+            </tr>
+            </thead>
+            <tbody id="archivedNotesTable">
+            </tbody>
+        </table>
     </div>
 </div>
 

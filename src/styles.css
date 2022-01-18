@@ -1,23 +1,25 @@
 body {
-  transition: .2s all ease-in;
+    padding: 0;
+    background-color: #f2f2f2;
+    transition: .2s all ease-in;
 }
 
-body.dark {
-  background: #343a40;
-  color: #fff;
+td {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
 }
 
-body.dark hr {
-  border-top: 1px solid rgba(0,0,0,.9);
+.notes-container {
+    margin: 10px 30px;
 }
 
-body.dark .card {
-  background: #343a40;
-  border: 1px solid rgba(0,0,0,.875);
+.note-buttons svg {
+    width: 140%;
+    height: 140%;
 }
 
-.heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.control-buttons {
+    margin-bottom: 20px;
 }
+
