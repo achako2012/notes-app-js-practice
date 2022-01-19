@@ -5,12 +5,13 @@ body {
 }
 
 td {
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.notes-container {
+.app-wrapper {
     margin: 10px 30px;
 }
 
@@ -19,7 +20,7 @@ td {
     height: 140%;
 }
 
-.control-buttons {
+.control-buttons, .notes-stats-wrapper {
     margin-bottom: 20px;
 }
 

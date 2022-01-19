@@ -1,7 +1,7 @@
 import {notes} from './notes-store/notes'
 import {addNote, deleteNote, editNote} from './notes-store/actions'
-import {createStore} from "./createStore";
-import {getRandomDigit, renderTableRow} from "./helpers/utils";
+import {createStore} from "./notes-store/createStore";
+import {countCategories, getRandomDigit, renderStats, renderTableRow} from "./helpers/utils";
 
 import './styles.css'
 
@@ -11,11 +11,27 @@ const addNoteBtn = document.getElementById('addNoteBtn')
 const viewArchivedBtn = document.getElementById('viewArchivedBtn')
 const collapsedElements = document.getElementById('collapse')
 
+const ideasCard = document.getElementById('ideasCard')
+const tasksCard = document.getElementById('tasksCard')
+const quotesCard = document.getElementById('quotesCard')
+const randomCard = document.getElementById('randomCard')
+
 const noteStore = createStore(notes)
 
 // subscribe method will be executed every time the notes list changed
 noteStore.subscribe(() => {
     const {notes} = noteStore.getState()
+
+    const arr = [];
+    arr.push({Task: countCategories(notes, 'Task'), element: tasksCard});
+    arr.push({Idea: countCategories(notes, "Idea"), element: ideasCard});
+    arr.push({Quote: countCategories(notes, "Quote"), element: quotesCard});
+    arr.push({Random: countCategories(notes, "Random"), element: randomCard});
+
+    arr.forEach(elem => {
+        const {element, ...values} = elem
+         renderStats(element, values)
+    })
 
     activeNotesTable.innerHTML = notes.map(elem => {
         if (elem.status === 'Active')

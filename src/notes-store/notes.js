@@ -8,7 +8,7 @@ const initialNotes = {
             created: '12.01.2022',
             category: 'Quote',
             status: 'Active',
-            content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum v Lorem Ipsum v v v ',
+            content: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum v Lorem Ipsum m Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsm Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsm Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsm Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsm Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsm Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsm Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsm Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsm Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsm Ipsum Lorem Ipsum Lorem Ipsum Lorem Ips ',
             dates: '3/5/2021, 5/6/2020',
             isEditing: false
         },

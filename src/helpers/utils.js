@@ -43,3 +43,25 @@ export const renderTableRow = (row) => {
         </tr>`
 }
 
+export const countCategories = (arr, searchKey) => {
+    const reducer = (accumulator, currentValue) => {
+        if (currentValue.category === searchKey) {
+            if (currentValue.status === 'Active') {
+                accumulator.active += 1;
+            } else {
+                accumulator.archived += 1;
+            }
+        }
+        return accumulator;
+    };
+
+    return arr.reduce(reducer, {active: 0, archived: 0});
+};
+
+export const renderStats = (element, values) => {
+    const {active, archived} = Object.values(values)[0]
+
+    element.querySelector('[data-id="active"]').textContent = active
+    element.querySelector('[data-id="archived"]').textContent = archived
+}
+
