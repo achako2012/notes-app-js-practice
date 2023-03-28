@@ -1,5 +1,7 @@
 # Notes-app-js
 
+Basic note application with redux by native js example
+
 ## Prerequisites
 
 - Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
